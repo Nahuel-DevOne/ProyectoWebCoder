@@ -37,7 +37,7 @@
 .star {
   font-family: "WebSymbolsRegular";
   font-size: 7vw;
-  color: #212529;
+  color: #dc3545;
   text-shadow: 0px 0px 3px #ccc; }
 
 /*animación para hacer girar un elemento*/
@@ -70,7 +70,7 @@
 
 .logoFooter {
   text-decoration: none;
-  color: #212529;
+  color: #dc3545;
   font-size: 5vw;
   font-family: "Nunito", sans-serif;
   font-style: italic;
