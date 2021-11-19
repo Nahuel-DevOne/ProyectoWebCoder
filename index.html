@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto nuevo</title>
-    <meta name="keywords" content="palabras clave ...">
     <meta name="description" content="Este es el sitio web de ...">
+    <meta name="keywords" content="palabras clave ...">
     <!-- Imagen para el título de la pestaña -->
-    <link rel="icon" type="favicon/x-icon" href="./img/svg/web.svg">
+    <link rel="icon" type="favicon/x-icon" href="./img/svg/web.svg" content="Social Media">
     <!-- Enlaces a fuente de google fonts: letra "Nunito" -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -23,93 +23,151 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <!-- Acá empieza la cabecera -->
-    <header>
-        <!-- Acá empieza el nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
-            <div class="container-fluid">
-                <!-- <span class="star rodar ms-3">R</span> -->
-                <a class="text-danger p-4 logoNavbar" href="#">Logo</a>
+<body id="pageTop">
+    
+    <!-- Acá empieza el header. Navigation-->
+    <header class="overflow-hidden">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-lowercase" href="#pageTop">
+                    <img class="img-fluid logo sombra" src="./img/logo.png" alt="Logo de De Social Media">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto fs-5 p-3">
-                        <li class="nav-item">
-                            <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" href="#">Nosotros</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#pageTop">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Nosotros</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Servicios
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Servicios
                             </a>
-                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item text-danger" href="#">Marketing</a></li>
-                                <li><a class="dropdown-item text-danger" href="#">Publicidad</a></li>
-                                <li><a class="dropdown-item text-danger" href="#">Fotografía</a></li>
-                                <li><a class="dropdown-item text-danger" href="#">Organización de eventos</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Marketing</a></li>
+                              <li><a class="dropdown-item" href="#">Publicidad</a></li>
+                              <li><a class="dropdown-item" href="#">Fotografía</a></li>
+                              <li><a class="dropdown-item" href="#">Diseño gráfico</a></li>
+                              <li><a class="dropdown-item" href="#">Páginas web</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" href="#">Trabajos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" href="#">Contactanos</a>
-                        </li>
+                          </li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="pages/trabajos.html">Servicios</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#comcreativa">Trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contactanos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Acá termina el nav-->
-    </header>
-    <!-- Acá termina la cabecera -->
-
-    <!-- Acá empieza el contenido principal -->
-    <main>
-        <!-- Acá empieza una sección-->
-        <section>
-            <div class="text-dark">
-                <p class="display-1 text-center">Soy una sección</p>
-            </div>
-            <div></div>
-            <div></div>
-        </section>
-        <!-- Acá termina una sección -->
-
-        <!-- Acá empieza otra sección-->
-        <section>
-            <article></article>
-        </section>
-        <!-- Acá terminar la sección -->
-    </main>
-    <!-- Acá termina el contenido principal -->
-
-    <!-- Acá empieza el pie de página -->
-    <footer>
-        <footer id="footer" class="bg-dark border-top">
+        <!-- <div class="texto__principal d-flex align-items-center">
+            <div class="fondo__negro"></div>
             <div class="container-fluid">
-                <div class="column pie">
-                    <a href="#" class="logoFooter">Logo</a>
-                    <a href="#" target="_blank" class="m-2"><img src="./img/svg/instagram.svg"
-                            alt="Imagen del icono de GitHub" class="icono"></a>
-                    <a href="#" target="_blank" class="m-2"><img
-                            src="./img/svg/facebook.svg" alt="Imagen del icono de linkedIn" class="icono"></a>
-                    <a href="#" target="_blank" class="m-2"><img
-                            src="./img/svg/twitter.svg" alt="Imagen del icono de linkedIn" class="icono"></a>
+                <div class="row">
+                    <h1 class="text-center" data-aos="fade-up" data-aos-duration="1200">
+                        Social Media</h1>
+                    <h2 class="texto__principal--centrado h2__header" data-aos="fade-up" data-aos-duration="1500">Llegó
+                        la hora de impulsar tu marca</h2>
+                    <div class="boton__header d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="500">
+                        <a href="https://wa.link/cnimlu" target="_blank"><button type="button"
+                                class="btn btn-danger btn-lg">CONTACTÁNOS</button></a>
+                    </div>
                 </div>
-                <div class="info mb-5">De Social Media &copy; - Todos los derechos reservados</div>
             </div>
-        </footer>
-    </footer>
-    <!-- Acá termina el pie de página -->
+        </div> -->
+        <div class="video__header">
+            <video autoplay muted loop>
+                <source src="./videos/VideoHero.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+    <!-- Acá termina el header -->
 
-    <!-- Enlace a JavaScript local -->
+    <!-- Sección de nosotros. Armar la presentación -->
+    <section id="seccion-1" class="bg-secondary">
+        <h2 class="text-center display-3 p-5">Sección de nosotros</h2>
+    </section>
+
+    <!-- Sección de Servicios. Armar el carrousel con las cards -->
+    <section id="seccion-2" class="bg-primary">
+        <h2 class="text-center display-3 p-5">Sección de servicios</h2>
+    </section>
+
+    <!-- Sección de contactanos y footer -->
+    <section id="seccion-3" class="bg-danger">
+
+        <!-- Contactanos-->
+        <div class="container">
+            <div class="row">
+                <div class="contactanos mt-5">
+                    <div class="col-10 col-md-12 col-lg-5">
+                        <h3 class="fs-1 ms-3 text-white">LOREM IPSUM</h3>
+                        <P class="ms-3 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nulla, consectetur facilis corrupti repellendus fugit voluptatibus vitae ipsum nostrum enim eligendi reiciendis ad odio deserunt, nihil unde repudiandae sed sequi!</P>
+                    </div>
+                    <div class="col-11 col-md-12 col-lg-7 ms-auto">
+                        <form action="" class="p-3">
+                            <!-- Nombre y correo-->
+                            <div class="row justify-content-center">
+                                <!-- Una fila con dos columnas -->
+                                <div class="col-12 col-sm-8 col-lg-10">
+                                    <label for="nombre" class="form-label text-white">Nombre</label>
+                                    <input id="nombre" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-8 col-lg-10">
+                                    <label for="correo" class="form-label text-white">Email</label>
+                                    <input id="correo" type="text" class="form-control">                    
+                                </div>
+                            </div>
+        
+                            <!-- Cuadro de mensaje -->
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-8 col-lg-10">
+                                    <label for="mensaje" class="form-label text-white">Mensaje</label>
+                                    <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                                </div>
+                            </div>
+        
+                            <div class="row justify-content-center">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div>
+                                        <!-- <div class="form-check mt-3 mb-3">
+                                            <input type="checkbox" name="terminos" id="terminos" class="form-check-input">
+                                            <label for="terminos" class="form-check-label text-white">Acepto los términos y condiciones</label>
+                                        </div> -->
+                                        <button type="submit" class="col-12 btn btn-dark bg-gradient mt-2">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="cajaFooter p-5">
+                    <a href="#"><img class="logo-footer sombra" src="./img/logo.png" alt=""></a>
+                    <h6 class="text-white text-center">De Social Media &copy; - Todos los derechos reservados</h6>  
+                    <div>
+                        <a href="#"><img class="redes-sociales" src="./img/svg/instagram.svg" alt=""></a>
+                        <a href="#"><img class="redes-sociales" src="./img/svg/facebook.svg" alt=""></a>
+                        <a href="#"><img class="redes-sociales" src="./img/svg/linkedin.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
     <script src="assets/js/main.js"></script>
     <!-- Enlace a JavaScript de bootstrap local -->
     <script src="assets/bootstrap/js/bootstrap.js"></script>

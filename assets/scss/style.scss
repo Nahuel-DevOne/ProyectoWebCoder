@@ -1,9 +1,8 @@
 /***** Estilos generales *****/
 * {
-  list-style: none;
-  text-decoration: none;
   margin: 0px;
   padding: 0px; 
+  box-sizing: border-box;
 }
 
 /***** Variables globales en SASS *****/
@@ -53,101 +52,243 @@ $fuenteTres: "WebSymbolsRegular";
     font-style: normal;
 }
 
-//Clases del navbar::
-.logoNavbar{
-  text-decoration: none;
-  font-size: 9vh;
-  font-family: $fuenteUno;
-  font-style: italic;
+// @font-face { 
+//   font-family: gilroy; src: url('../assets/fonts/Gilroy-Light.otf'); 
+// } 
+
+// @font-face { 
+//   font-family: gilroy; 
+//   font-weight: bold; 
+//   src: url('../assets/fonts/Gilroy-ExtraBold.otf'); 
+// }
+
+// body {
+//   font-family: gilroy;
+//   background-color: rgb(45, 45, 45);
+// }
+
+/********** Clases para el header **********/
+header {
+  min-height: 100vh;
+  position: relative;
+}
+
+/********** Clases del NAV **********/
+.logo{
+  min-height: 14vh;
+}
+
+.sombra{
+  box-shadow: 2px 2px 5px #acabab;
+}
+
+#mainNav {
+  padding-bottom: 1rem;
+  background-color: #212529;
+}
+
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: gilroy;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#mainNav .navbar-brand {
+  color: white;
+  font-family: gilroy;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: gilroy;
   font-weight: bold;
-  margin-right: 2vw;
-  text-shadow: 2px 2px 5px $colorCinco;
+  font-size: 0.95rem;
+  letter-spacing: 0.0625em;
 }
 
-.logoNavbar:hover{
-  color: $colorCinco;
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: rgb(254,96,96);
 }
 
-.star{
-  font-family: $fuenteTres;
-  font-size: 7vw;
-  color: $colorDanger;
-  text-shadow: 0px 0px 3px $colorCuatro;
-}
-
-/*animación para hacer girar un elemento*/
-.rodar{
-  animation-name: rodar;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}  
-
-@keyframes rodar{
-  from{
-    transform: rotateZ(0deg);
+/********** media query para uso del nav **********/
+@media only screen and (min-width: 992px) {
+  #mainNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: transparent;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
-  to{
-    transform: rotateZ(360deg);
+  #mainNav .navbar-brand {
+      font-size: 2rem;
+      transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+      height: 2rem;
+      transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+      height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+      margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+      margin-right: 0;
   }
 }
-
-// Clases del footer:
-#footer {
-  max-width: 100vw;
-  height: 25vh; 
- } 
-
-.icono {
-  height: 7vh;
-  width: auto;
-  border: 1px solid $colorCinco;
-  border-radius: 50%;
-  padding: 4px; }  
- 
-#footer .info {
+.navbar-collapse {
   text-align: center;
-  color: $colorCinco; }
-
-.logoFooter{
-  text-decoration: none;
-  color: $colorDanger;
-  font-size: 5vw;
-  font-family: $fuenteUno;
-  font-style: italic;
-  font-weight: bold;
-  margin-right: 2vw;
-  text-shadow: 2px 2px 5px $colorCinco;}
-
-.logoFooter:hover{
- color: $colorSeis;
- text-shadow: 2px 2px 5px $colorCinco; 
 }
- 
-.pie{
+.navbar-brand p{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.navbar-brand p:hover {
+  transform: scale(1.1);
+}
+.nav-item .nav-link {
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.nav-item .nav-link:hover {
+  transform: scale(1.1);
+}
+.activo {
+  color: rgb(254,96,96) !important;
+}
+/********** FIN NAV **********/
+
+/********** video home **********/
+.video__header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+/********** Clases para cada sección **********/
+#seccion-1 {
+  min-height: 100vh;
+}
+#seccion-2 {
+  min-height: 100vh;
+}
+#seccion-3 {
+  min-height: 50vh;
+}
+
+/********** Clases para Contactanos **********/
+.contactanos{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/********** Clases del footer **********/
+.cajaFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  padding: 2vh;
 }
 
-//media query para tamaño tablets:
-@media(max-width: 991.98px){
-  .logoNavbar{
-    font-size: 10vh;
+.logo-footer{
+  width: 5vw;
+}
+
+.redes-sociales{
+  width: 5vw;
+  margin: 0 1rem 0 0;
+}
+
+/********** Vista tablet **********/
+@media(max-width: 991.98px){   
+  
+  /*Sección de contactanos*/
+  .contactanos{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
-  .logoFooter{
-    font-size: 6vw;
-  }  
+
+  header {
+      min-height: 33.5rem;
+  }
+  p {
+      font-size: 1.2rem;
+  }
+  .video__header video {
+      width: 105%;
+      top: 20rem;
+  }
+  
 }
 
-//media query para tamaño mobile:
+/********** Vista ... especiales **********/
+@media(max-width: 767px){
+
+  header {
+      min-height: 23.5rem;
+  }
+  .video__header video {
+      width: 150%;
+      top: 15rem;
+  }
+  /********** Contactanos **********/
+  .contactanos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /********** Footer **********/
+  .cajaFooter{
+    flex-direction: column;
+  }
+  .logo-footer{
+    margin-bottom: 1.5rem;
+    width: 10vw;
+  }
+  .redes-sociales{
+    margin: 1rem;
+    width: 7vw;
+  }
+}
+
+/********** Vista Mobile **********/
 @media(max-width: 575.98px){
-  .logoNavbar{
-    font-size: 8vh;
+  .logo-footer{
+    width: 20vw;
   }
-
-  .logoFooter{
-    font-size: 10vw;
+  .redes-sociales{
+    margin: 1rem;
+    width: 10vw;
   }
 }
