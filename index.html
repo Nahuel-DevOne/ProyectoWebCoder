@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto nuevo</title>
+    <title>De Social Media</title>
     <meta name="description" content="Este es el sitio web de ...">
     <meta name="keywords" content="palabras clave ...">
     <!-- Imagen para el título de la pestaña -->
-    <link rel="icon" type="favicon/x-icon" href="./img/svg/web.svg" content="Social Media">
+    <link rel="icon" type="favicon/x-icon" href="./img/iconos/favicon-DeSocialMedia.jpg" content="Social Media">
     <!-- Enlaces a fuente de google fonts: letra "Nunito" -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -17,6 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace FontAwesome -->
+    <script src="https://kit.fontawesome.com/febc0fa0b3.js" crossorigin="anonymous"></script>
+    <!-- Enlace a Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Enlace a css de bootstrap local-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <!-- Enlace a css local -->
@@ -41,22 +46,21 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#pageTop">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicios">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#seccion-nosotros">Nosotros</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Servicios
+                            <a class="nav-link dropdown-toggle" href="#seccion-servicios" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Marketing</a></li>
-                              <li><a class="dropdown-item" href="#">Publicidad</a></li>
-                              <li><a class="dropdown-item" href="#">Fotografía</a></li>
-                              <li><a class="dropdown-item" href="#">Diseño gráfico</a></li>
-                              <li><a class="dropdown-item" href="#">Páginas web</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Publicidad</a></li>
+                                <li><a class="dropdown-item" href="#">Fotografía</a></li>
+                                <li><a class="dropdown-item" href="#">Diseño gráfico</a></li>
+                                <li><a class="dropdown-item" href="#">Páginas web</a></li>
                             </ul>
-                          </li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="pages/trabajos.html">Servicios</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#comcreativa">Trabajos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contactanos</a></li>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#seccion-contacto">Contactanos</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,17 +90,146 @@
     <!-- Acá termina el header -->
 
     <!-- Sección de nosotros. Armar la presentación -->
-    <section id="seccion-1" class="bg-secondary">
-        <h2 class="text-center display-3 p-5">Sección de nosotros</h2>
+    <section id="seccion-nosotros">
+        <!-- <h2 class="text-center display-3 p-5">Sección de nosotros</h2> -->
+        <div class="container-fluid">
+            <div class="row row__nosotros">
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="./img/iconos/Comillas.png" class="img__comillas comilla1" alt="">
+                </div>
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <h2 class="text-center display-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="./img/iconos/Comillas.png" alt="" class="img__comillas comilla2">
+                </div>
+            </div>
+            <div class="row row__nosotros2">
+                <div class="col-4 position-relative d-flex justify-content-center align-items-end p-0">
+                    <div class="texto__img__nosotros">
+                        <h3>Lorem ipsum</h3>
+                        <h4>corporis quisquam</h4>
+                    </div>
+                    <img src="./img/img-contacto-prueba2.jpg" class="img-fluid img__nosotros" alt="">
+                </div>
+                <div class="col-4 position-relative d-flex justify-content-center align-items-end p-0">
+                    <div class="texto__img__nosotros">
+                        <h3>Lorem ipsum</h3>
+                        <h4>corporis quisquam</h4>
+                    </div>
+                    <img src="./img/img-contacto-prueba3.jpg" class="img-fluid img__nosotros" alt="">
+                </div>
+                <div class="col-4 position-relative d-flex justify-content-center align-items-end p-0">
+                    <div class="texto__img__nosotros">
+                        <h3>Lorem ipsum</h3>
+                        <h4>corporis quisquam</h4>
+                    </div>
+                    <img src="./img/img-contacto-prueba1.jpg" class="img-fluid img__nosotros" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Sección de Servicios. Armar el carrousel con las cards -->
-    <section id="seccion-2" class="bg-primary">
-        <h2 class="text-center display-3 p-5">Sección de servicios</h2>
+    <section id="seccion-servicios">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="text-center display-4 p-5 text-uppercase fw-bold texto__servicios">Nuestros Servicios</h2>
+                <span class="texto__servicios--linea"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-pnw-production-7062062.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/FotografiaIcono.png" class="card__iconos__img" alt="Icono Fotografía">
+                            <h5 class="card-title card__servicios__titulo">Fotografía</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-alex-fu-1767783.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/VideoIcono.png" class="card__iconos__img" alt="Icono Videos">
+                            <h5 class="card-title card__servicios__titulo">Video</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-david-bartus-844928.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/EventosIcono.png" class="card__iconos__img" alt="Icono Eventos">
+                            <h5 class="card-title card__servicios__titulo">Eventos</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-ovan-57690.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/DisenioIcon.png" class="card__iconos__img" alt="Icono Fotografía">
+                            <h5 class="card-title card__servicios__titulo">Diseño</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-cottonbro-5053765.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/iNTERACCIONICONO.png" class="card__iconos__img" alt="Icono Videos">
+                            <h5 class="card-title card__servicios__titulo">Interacción</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-pixabay-265087.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/MarketingIcono.png" class="card__iconos__img" alt="Icono Eventos">
+                            <h5 class="card-title card__servicios__titulo">Marketing</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card__servicios">
+                        <img src="./img/pexels-karolina-grabowska-4491469.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card__iconos"></div>
+                            <img src="./img/iconos/ComunityMIcono.png" class="card__iconos__img" alt="Icono Community Manager">
+                            <h5 class="card-title card__servicios__titulo">Community Manager</h5>
+                            <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Sección de contactanos y footer -->
-    <section id="seccion-3" class="bg-danger">
+    <section id="seccion-contacto">
 
         <!-- Contactanos-->
         <div class="container">
@@ -152,14 +285,20 @@
     
     <footer>
         <div class="container-fluid">
-            <div class="row bg-dark">
+            <div class="row">
                 <div class="cajaFooter p-5">
-                    <a href="#"><img class="logo-footer sombra" src="./img/logo.png" alt=""></a>
-                    <h6 class="text-white text-center">De Social Media &copy; - Todos los derechos reservados</h6>  
-                    <div>
-                        <a href="#"><img class="redes-sociales" src="./img/svg/instagram.svg" alt=""></a>
-                        <a href="#"><img class="redes-sociales" src="./img/svg/facebook.svg" alt=""></a>
-                        <a href="#"><img class="redes-sociales" src="./img/svg/linkedin.svg" alt=""></a>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <a href="#"><img class="logo-footer sombra" src="./img/logo.png" alt="Logo de De Social Media"></a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <h6 class="text-white text-center">De Social Media &copy; - Todos los derechos reservados</h6>  
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="logosSocialesContainer">
+                            <a href="#"><i class="fab fa-instagram redes-sociales"></i></a>                       
+                            <a href="#"><i class="fab fa-facebook redes-sociales"></i></a>                       
+                            <a href="#"><i class="fab fa-linkedin-in redes-sociales"></i></a>                       
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,9 +307,14 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init()</script>
-    <script src="assets/js/main.js"></script>
+    <!-- Enlace a JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Enlace a Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Enlace a JavaScript de bootstrap local -->
     <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <!-- Enlace a Javascript Propio -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

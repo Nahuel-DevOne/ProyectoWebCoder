@@ -40,5 +40,25 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
+
+// Owl Carousel
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+            dots: false
+        },
+        600:{
+            items:2,
+            dots: false
+        },
+        1000:{
+            items:3,
+            dots: false
+        }
+    }
+})

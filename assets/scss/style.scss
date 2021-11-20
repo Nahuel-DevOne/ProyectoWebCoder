@@ -16,6 +16,8 @@ $colorNaranjaFogata: rgba(255, 146, 3, 0.8); //naranja fogata para algunas sombr
 $colorAzulFuerte: rgb(13, 5, 90);
 $colorAzulClarito: #37bcf9;
 $colorAzulPetroleo: #00538c;
+$colorRojito: rgb(254,96,96);
+$colorRojoNet: #e50914;
 
 /*Variables de colores de Bootstrap*/
 $colorDark: #212529;
@@ -52,21 +54,6 @@ $fuenteTres: "WebSymbolsRegular";
     font-style: normal;
 }
 
-// @font-face { 
-//   font-family: gilroy; src: url('../assets/fonts/Gilroy-Light.otf'); 
-// } 
-
-// @font-face { 
-//   font-family: gilroy; 
-//   font-weight: bold; 
-//   src: url('../assets/fonts/Gilroy-ExtraBold.otf'); 
-// }
-
-// body {
-//   font-family: gilroy;
-//   background-color: rgb(45, 45, 45);
-// }
-
 /********** Clases para el header **********/
 header {
   min-height: 100vh;
@@ -75,7 +62,7 @@ header {
 
 /********** Clases del NAV **********/
 .logo{
-  min-height: 14vh;
+  min-height: 9vh;
 }
 
 .sombra{
@@ -85,22 +72,14 @@ header {
 #mainNav {
   padding-bottom: 1rem;
   background-color: #212529;
+  background-color: #181616;
 }
 
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
-  font-family: gilroy;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-#mainNav .navbar-brand {
-  color: white;
-  font-family: gilroy;
-  font-weight: 700;
-  letter-spacing: 0.0625em;
-  text-transform: uppercase;
 }
 
 #mainNav .navbar-brand img {
@@ -112,16 +91,18 @@ header {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: gilroy;
   font-weight: bold;
   font-size: 0.95rem;
   letter-spacing: 0.0625em;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-  color: rgb(254,96,96);
+  color: $colorRojoNet;
 }
-
+.dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
+  color: #fff;
+  background-color: $colorRojoNet;
+}
 /********** media query para uso del nav **********/
 @media only screen and (min-width: 992px) {
   #mainNav {
@@ -143,6 +124,7 @@ header {
       padding-top: 0.2rem;
       padding-bottom: 0.2rem;
       background-color: #212529;
+      background-color: #181616;
   }
   #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5rem;
@@ -179,7 +161,7 @@ header {
   transform: scale(1.1);
 }
 .activo {
-  color: rgb(254,96,96) !important;
+  color: $colorRojoNet !important;
 }
 /********** FIN NAV **********/
 
@@ -193,15 +175,143 @@ header {
 }
 
 /********** Clases para cada sección **********/
-#seccion-1 {
+#seccion-nosotros {
+  min-height: 100vh;
+  background-color: $colorRojoNet;
+}
+#seccion-servicios {
   min-height: 100vh;
 }
-#seccion-2 {
-  min-height: 100vh;
-}
-#seccion-3 {
+#seccion-contacto {
   min-height: 50vh;
+  background-color: $colorRojoNet;
 }
+
+/********** Clases para Nosotros **********/
+.row__nosotros {
+  min-height: 30vh;
+}
+.row__nosotros2 {
+  min-height: 70vh;
+}
+.img__comillas {
+  width: 75%;
+  height: 75%;
+}
+.comilla1 {
+  transform:rotate(180deg);
+}
+.comilla2 {
+  margin-top: 3rem;
+}
+.img__nosotros {
+  filter: brightness(75%);
+}
+.texto__img__nosotros {
+  z-index: 2;
+  position: absolute;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  h3{
+    font-size:3rem;
+    text-transform: uppercase;
+  }
+}
+
+/********** Clases para Servicios **********/
+.texto__servicios--linea{
+  border: 3px solid $colorRojoNet;
+  width: 20rem;
+}
+/* Modificacion de boton Carousel */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 2-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 0.708 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 0.708 0l6 6a.5.5 0 0 0 0 0.708l-6 6a.5.5 0 0 2-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 1-.708z'/%3e%3c/svg%3e");
+}
+
+/* Owl Carousel Modificaciones */
+.owl-carousel {
+  margin-top: 6rem;
+  padding-top: 2rem;
+}
+
+.owl-stage-outer {
+  padding-bottom: 2rem;
+}
+.owl-theme .owl-nav [class*=owl-]{
+  transition: all 0.1s;
+  &:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0);
+    top: 148px;
+  }
+}
+.owl-prev {
+  left: -30px;
+}
+.owl-next {
+  right: -30px;
+}
+.owl-prev , .owl-next {
+  position: absolute;
+  top: 150px;
+  & span {
+    font-size: 80px;
+    color: black;
+  }
+}
+
+.card__servicios {
+  width: 22rem;
+  height: 32rem;
+  padding: 0;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 16px #00000029;
+  border-radius: 18px;
+  opacity: 1;
+  .card__servicios__img {
+    height: 20rem;
+    object-fit: cover;
+  }
+  .card__iconos {
+    border: 44px solid red;
+    position: absolute;
+    border-radius: 100%;
+    transform: translateY(-90px);
+    background: #E50913 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #0000004F;
+    opacity: 1;
+  }
+  .card__iconos__img {
+    width: 60px !important;
+    position: absolute;
+    transform: translateY(-72px);
+  }
+  .card__servicios__titulo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .card__servicios__texto {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .btn-servicios {
+    background-color: $colorRojoNet;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 
 /********** Clases para Contactanos **********/
 .contactanos{
@@ -210,11 +320,15 @@ header {
   justify-content: space-between;
 }
 
+
 /********** Clases del footer **********/
+footer {
+  background-color:black;
+}
+
 .cajaFooter{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -223,8 +337,10 @@ header {
 }
 
 .redes-sociales{
-  width: 5vw;
+  color: white;
+  font-size: 3rem;
   margin: 0 1rem 0 0;
+  margin-left: 2rem;
 }
 
 /********** Vista tablet **********/
@@ -277,8 +393,9 @@ header {
     width: 10vw;
   }
   .redes-sociales{
+    color: white;
     margin: 1rem;
-    width: 7vw;
+    font-size: 2.75rem;
   }
 }
 
@@ -288,7 +405,8 @@ header {
     width: 20vw;
   }
   .redes-sociales{
+    color: white;
     margin: 1rem;
-    width: 10vw;
+    font-size: 2.5rem;
   }
 }
