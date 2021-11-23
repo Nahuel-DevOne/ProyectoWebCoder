@@ -22,6 +22,8 @@
     <!-- Enlace a Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Enlace a AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Enlace a css de bootstrap local-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <!-- Enlace a css local -->
@@ -65,22 +67,10 @@
                 </div>
             </div>
         </nav>
-        <!-- <div class="texto__principal d-flex align-items-center">
-            <div class="fondo__negro"></div>
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="text-center" data-aos="fade-up" data-aos-duration="1200">
-                        Social Media</h1>
-                    <h2 class="texto__principal--centrado h2__header" data-aos="fade-up" data-aos-duration="1500">Llegó
-                        la hora de impulsar tu marca</h2>
-                    <div class="boton__header d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="500">
-                        <a href="https://wa.link/cnimlu" target="_blank"><button type="button"
-                                class="btn btn-danger btn-lg">CONTACTÁNOS</button></a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        <div class="container-fluid container__texto__header justify-content-center align-items-center d-flex flex-column">
+            <h1 class="text-white fw-bold texto__header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">DE SOCIAL MEDIA</h1>
+            <button class="btn btn-header fw-bold btn-lg" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">Contáctanos</button>
+        </div>
         <div class="video__header">
             <video autoplay muted loop>
                 <source src="./videos/VideoHero.mp4" type="video/mp4">
@@ -98,7 +88,7 @@
                     <img src="./img/iconos/Comillas.png" class="img__comillas comilla1" alt="">
                 </div>
                 <div class="col-6 d-flex justify-content-center align-items-center">
-                    <h2 class="text-center display-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <h2 class="text-center text-white" data-aos="flip-left" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                 </div>
                 <div class="col-3 d-flex justify-content-center">
                     <img src="./img/iconos/Comillas.png" alt="" class="img__comillas comilla2">
@@ -106,21 +96,21 @@
             </div>
             <div class="row row__nosotros2">
                 <div class="col-4 position-relative d-flex justify-content-center align-items-end p-0">
-                    <div class="texto__img__nosotros">
+                    <div class="texto__img__nosotros" data-aos="zoom-out" data-aos-duration="1000">
                         <h3>Lorem ipsum</h3>
                         <h4>corporis quisquam</h4>
                     </div>
                     <img src="./img/img-contacto-prueba2.jpg" class="img-fluid img__nosotros" alt="">
                 </div>
                 <div class="col-4 position-relative d-flex justify-content-center align-items-end p-0">
-                    <div class="texto__img__nosotros">
+                    <div class="texto__img__nosotros" data-aos="zoom-out" data-aos-duration="1000">
                         <h3>Lorem ipsum</h3>
                         <h4>corporis quisquam</h4>
                     </div>
                     <img src="./img/img-contacto-prueba3.jpg" class="img-fluid img__nosotros" alt="">
                 </div>
                 <div class="col-4 position-relative d-flex justify-content-center align-items-end p-0">
-                    <div class="texto__img__nosotros">
+                    <div class="texto__img__nosotros" data-aos="zoom-out" data-aos-duration="1000">
                         <h3>Lorem ipsum</h3>
                         <h4>corporis quisquam</h4>
                     </div>
@@ -134,8 +124,8 @@
     <section id="seccion-servicios">
         <div class="container">
             <div class="row justify-content-center">
-                <h2 class="text-center display-4 p-5 text-uppercase fw-bold texto__servicios">Nuestros Servicios</h2>
-                <span class="texto__servicios--linea"></span>
+                <h2 class="text-center display-4 p-5 text-uppercase fw-bold texto__servicios" data-aos="fade-right" data-aos-duration="1000">Nuestros Servicios</h2>
+                <span class="texto__servicios--linea" data-aos="fade-right" data-aos-duration="1000"></span>
             </div>
         </div>
         <div class="container">
@@ -158,7 +148,7 @@
                         <div class="card-body d-flex flex-wrap justify-content-center">
                             <div class="card__iconos"></div>
                             <img src="./img/iconos/VideoIcono.png" class="card__iconos__img" alt="Icono Videos">
-                            <h5 class="card-title card__servicios__titulo">Video</h5>
+                            <h5 class="card-title card__servicios__titulo">Edición de Video</h5>
                             <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
                         </div>
@@ -182,7 +172,7 @@
                         <div class="card-body d-flex flex-wrap justify-content-center">
                             <div class="card__iconos"></div>
                             <img src="./img/iconos/DisenioIcon.png" class="card__iconos__img" alt="Icono Fotografía">
-                            <h5 class="card-title card__servicios__titulo">Diseño</h5>
+                            <h5 class="card-title card__servicios__titulo">Diseño gráfico</h5>
                             <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
                         </div>
@@ -190,11 +180,11 @@
                 </div>
                 <div class="item">
                     <div class="card card__servicios">
-                        <img src="./img/pexels-cottonbro-5053765.jpg" class="card-img-top rounded card__servicios__img" alt="...">
+                        <img src="./img/pexels-pixabay-270348.jpg" class="card-img-top rounded card__servicios__img" alt="...">
                         <div class="card-body d-flex flex-wrap justify-content-center">
                             <div class="card__iconos"></div>
-                            <img src="./img/iconos/iNTERACCIONICONO.png" class="card__iconos__img" alt="Icono Videos">
-                            <h5 class="card-title card__servicios__titulo">Interacción</h5>
+                            <img src="./img/iconos/Desarrollo-Icon.png" class="card__iconos__img" alt="Icono páginas web">
+                            <h5 class="card-title card__servicios__titulo">Páginas Web</h5>
                             <p class="card-text text-center card__servicios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#" class="btn btn-servicios text-white text-uppercase fw-bold">Ver más</a>
                         </div>
@@ -305,12 +295,12 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init()</script>
     <!-- Enlace a JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Enlace a Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Enlace a AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Enlace a JavaScript de bootstrap local -->
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <!-- Enlace a Javascript Propio -->

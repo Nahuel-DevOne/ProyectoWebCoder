@@ -58,11 +58,27 @@ $fuenteTres: "WebSymbolsRegular";
 header {
   min-height: 100vh;
   position: relative;
+  .container__texto__header {
+    width: 100vw;
+    height: 100vh;
+    .texto__header {
+      font-size: 4rem;
+      margin-top: 25rem;
+      margin-bottom: 2rem;
+    }
+    .btn-header {
+      background-color: $colorRojoNet;
+      color: white;
+      border-radius: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
 }
+
 
 /********** Clases del NAV **********/
 .logo{
-  min-height: 9vh;
+  min-height: 10vh;
 }
 
 .sombra{
@@ -181,6 +197,14 @@ header {
 }
 #seccion-servicios {
   min-height: 100vh;
+  /* Estas lineas es para activar la background image */
+  // background-image: url(../../img/index.jpg);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // & h2 {
+  //   color: white;
+  // }
 }
 #seccion-contacto {
   min-height: 50vh;
@@ -188,11 +212,14 @@ header {
 }
 
 /********** Clases para Nosotros **********/
-.row__nosotros {
-  min-height: 30vh;
+#seccion-nosotros{
+  h2{
+    font-size: 4rem;
+  }
 }
+
 .row__nosotros2 {
-  min-height: 70vh;
+  height: 71vh;
 }
 .img__comillas {
   width: 75%;
@@ -221,7 +248,7 @@ header {
 
 /********** Clases para Servicios **********/
 .texto__servicios--linea{
-  border: 3px solid $colorRojoNet;
+  border: 0.25rem solid $colorRojoNet;
   width: 20rem;
 }
 /* Modificacion de boton Carousel */
@@ -246,18 +273,18 @@ header {
   &:hover{
     transform: scale(1.2);
     background-color: rgba(255, 255, 255, 0);
-    top: 148px;
+    top: 178px;
   }
 }
 .owl-prev {
-  left: -30px;
+  left: -50px;
 }
 .owl-next {
-  right: -30px;
+  right: -50px;
 }
 .owl-prev , .owl-next {
   position: absolute;
-  top: 150px;
+  top: 180px;
   & span {
     font-size: 80px;
     color: black;
@@ -265,11 +292,10 @@ header {
 }
 
 .card__servicios {
-  width: 22rem;
+  // width: 22rem;
   height: 32rem;
   padding: 0;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  // margin-left: 2rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 16px #00000029;
   border-radius: 18px;
@@ -346,6 +372,9 @@ footer {
 /********** Vista tablet **********/
 @media(max-width: 991.98px){   
   
+  .navbar-nav .dropdown-menu {
+    text-align: center;
+  }
   /*Sección de contactanos*/
   .contactanos{
     flex-direction: column;
@@ -357,6 +386,10 @@ footer {
   header {
       min-height: 33.5rem;
   }
+  .texto__header {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
   p {
       font-size: 1.2rem;
   }
@@ -364,7 +397,178 @@ footer {
       width: 105%;
       top: 20rem;
   }
+
+    /********** Clases para seccioness **********/
+    #seccion-nosotros {
+      min-height: auto;
+      background-color: $colorRojoNet;
+    }
+    #seccion-servicios {
+      min-height: auto;
+    }
   
+  /********** Clases para el header **********/
+  header {
+    position: relative;
+    .container__texto__header {
+      width: 100vw;
+      height: 33.5rem;
+      .texto__header {
+        font-size: 2rem;
+        margin-top: 20rem;
+        margin-bottom: 1rem;
+      }
+      .btn-header {
+        background-color: $colorRojoNet;
+        color: white;
+        border-radius: 1.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  /********** Clases para Nosotros **********/
+  #seccion-nosotros{
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+  
+  .row__nosotros {
+    min-height: auto;
+  }
+  .row__nosotros2 {
+    min-height: auto;
+    margin-top: 0;
+    height: auto;
+  }
+  .img__comillas {
+    width: 100%;
+    height: 10vh;
+  }
+  .comilla1 {
+    transform:rotate(180deg);
+  }
+  .comilla2 {
+    margin-top: 5rem;
+    margin-top: 5vh;
+  }
+  .img__nosotros {
+    filter: brightness(75%);
+  }
+  .texto__img__nosotros {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-bottom: 0rem;
+    h3{
+      font-size:1.5rem;
+      text-transform: uppercase;
+    }
+    h4{
+      font-size:1rem;
+    }
+  }
+  
+  /********** Clases para Servicios **********/
+  .texto__servicios--linea{
+    border: 3px solid $colorRojoNet;
+    width: 20rem;
+  }
+  /* Modificacion de boton Carousel */
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 2-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 0.708 0z'/%3e%3c/svg%3e");
+  }
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 0.708 0l6 6a.5.5 0 0 0 0 0.708l-6 6a.5.5 0 0 2-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 1-.708z'/%3e%3c/svg%3e");
+  }
+  
+  /* Owl Carousel Modificaciones */
+  .owl-carousel {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .owl-stage-outer {
+    padding-bottom: 2rem;
+  }
+  .owl-theme .owl-nav [class*=owl-]{
+    transition: all 0.1s;
+    &:hover{
+      transform: scale(1.2);
+      background-color: rgba(255, 255, 255, 0);
+      top: 178px;
+    }
+  }
+  .owl-prev {
+    left: -5px;
+  }
+  .owl-next {
+    right: -5px;
+  }
+  .owl-prev , .owl-next {
+    position: absolute;
+    top: 180px;
+    & span {
+      font-size: 80px;
+      color: black;
+    }
+  }
+  
+  .card__servicios {
+    // width: 22rem;
+    width: 80%;
+    height: 29rem;
+    padding: 0;
+    margin-left: 2rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 16px #00000029;
+    border-radius: 18px;
+    opacity: 1;
+    .card__servicios__img {
+      height: 15rem;
+      object-fit: cover;
+    }
+    .card__iconos {
+      border: 30px solid red;
+      position: absolute;
+      border-radius: 100%;
+      transform: translateY(-65px);
+      background: #E50913 0% 0% no-repeat padding-box;
+      box-shadow: 0px 10px 10px #0000004F;
+      opacity: 1;
+    }
+    .card__iconos__img {
+      width: 30px !important;
+      position: absolute;
+      transform: translateY(-48px);
+    }
+    .card__servicios__titulo {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .card__servicios__texto {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .btn-servicios {
+      background-color: $colorRojoNet;
+      border-radius: 1rem;
+      width: 10rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+
+  .logosSocialesContainer {
+    display: flex;
+  }
 }
 
 /********** Vista ... especiales **********/
@@ -401,6 +605,178 @@ footer {
 
 /********** Vista Mobile **********/
 @media(max-width: 575.98px){
+  
+  .navbar-nav .dropdown-menu {
+    text-align: center;
+  }
+  
+  /********** Clases para seccioness **********/
+  #seccion-nosotros {
+    min-height: auto;
+    background-color: $colorRojoNet;
+  }
+  #seccion-servicios {
+    min-height: auto;
+  }
+
+/********** Clases para el header **********/
+header {
+  position: relative;
+  .container__texto__header {
+    width: 100vw;
+    height: 23.5rem;
+    .texto__header {
+      font-size: 1.5rem;
+      margin-top: 15rem;
+      margin-bottom: 0.5rem;
+    }
+    .btn-header {
+      background-color: $colorRojoNet;
+      color: white;
+      border-radius: 1.5rem;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+/********** Clases para Nosotros **********/
+#seccion-nosotros{
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
+.row__nosotros {
+  min-height: auto;
+}
+.row__nosotros2 {
+  min-height: auto;
+  height: auto;
+  margin-top: 0;
+}
+.img__comillas {
+  width: 100%;
+  height: 5vh;
+}
+.comilla1 {
+  transform:rotate(180deg);
+}
+.comilla2 {
+  margin-top: 5rem;
+  margin-top: 13vh;
+}
+.img__nosotros {
+  filter: brightness(75%);
+}
+.texto__img__nosotros {
+  z-index: 2;
+  position: absolute;
+  color: white;
+  text-align: center;
+  margin-bottom: 0rem;
+  h3{
+    font-size:1rem;
+    text-transform: uppercase;
+  }
+  h4{
+    font-size:0.7rem;
+  }
+}
+
+/********** Clases para Servicios **********/
+.texto__servicios--linea{
+  border: 3px solid $colorRojoNet;
+  width: 20rem;
+}
+/* Modificacion de boton Carousel */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 2-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 0.708 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 0.708 0l6 6a.5.5 0 0 0 0 0.708l-6 6a.5.5 0 0 2-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 1-.708z'/%3e%3c/svg%3e");
+}
+
+/* Owl Carousel Modificaciones */
+.owl-carousel {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.owl-stage-outer {
+  padding-bottom: 2rem;
+}
+.owl-theme .owl-nav [class*=owl-]{
+  transition: all 0.1s;
+  &:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0);
+    top: 178px;
+  }
+}
+.owl-prev {
+  left: -5px;
+}
+.owl-next {
+  right: -5px;
+}
+.owl-prev , .owl-next {
+  position: absolute;
+  top: 180px;
+  & span {
+    font-size: 80px;
+    color: black;
+  }
+}
+
+.card__servicios {
+  // width: 22rem;
+  width: 80%;
+  height: 29rem;
+  padding: 0;
+  margin-left: 2rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 16px #00000029;
+  border-radius: 18px;
+  opacity: 1;
+  .card__servicios__img {
+    height: 15rem;
+    object-fit: cover;
+  }
+  .card__iconos {
+    border: 30px solid red;
+    position: absolute;
+    border-radius: 100%;
+    transform: translateY(-65px);
+    background: #E50913 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #0000004F;
+    opacity: 1;
+  }
+  .card__iconos__img {
+    width: 30px !important;
+    position: absolute;
+    transform: translateY(-48px);
+  }
+  .card__servicios__titulo {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .card__servicios__texto {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .btn-servicios {
+    background-color: $colorRojoNet;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
   .logo-footer{
     width: 20vw;
   }
