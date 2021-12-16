@@ -75,7 +75,6 @@ header {
   }
 }
 
-
 /********** Clases del NAV **********/
 .logo{
   min-height: 13vh;
@@ -338,7 +337,6 @@ header {
   }
 }
 
-
 /********** Clases para Contactanos **********/
 .contactanos{
   display: flex;
@@ -367,6 +365,74 @@ footer {
   font-size: 3rem;
   margin: 0 1rem 0 0;
   margin-left: 2rem;
+}
+
+/********** Clases para photography.html **********/
+.seccion-galeria{
+  background-color: black;
+}
+
+.nuestros-proyectos{
+  background-color: $colorRojoNet;
+  min-height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/***** para la sección de fotografías - grid *****/
+.gallery-container{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  // grid-template-rows: repeat(6,1fr);
+  grid-auto-rows: 50px;
+  padding: 20px;
+  gap: 15px;
+}
+
+.gallery__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__item:nth-child(1){
+  grid-column-start: span 3;
+  grid-row-start: span 5;
+}
+
+.gallery__item:nth-child(2){
+  grid-column-start: span 4;
+  grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(3){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(4){
+  grid-column-start: span 3;
+  grid-row-start: span 3;
+}
+
+.gallery__item:nth-child(5){
+  grid-column-start: span 3;
+  grid-row-start: span 3;
+}
+
+.gallery__item:nth-child(6){
+  grid-column-start: span 3;
+  grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(7){
+  grid-column-start: span 4;
+  grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(8){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
 }
 
 /********** Vista tablet **********/
@@ -398,7 +464,7 @@ footer {
       top: 20rem;
   }
 
-    /********** Clases para seccioness **********/
+    /********** Clases para secciones **********/
     #seccion-nosotros {
       min-height: auto;
       background-color: $colorRojoNet;
