@@ -248,6 +248,7 @@ header {
 /********** Clases para Servicios **********/
 .texto__servicios--linea{
   border: 0.25rem solid $colorRojoNet;
+  background-color: $colorRojoNet;
   width: 20rem;
 }
 /* Modificacion de boton Carousel */
@@ -304,7 +305,7 @@ header {
     object-fit: cover;
   }
   .card__iconos {
-    border: 44px solid red;
+    border: 44px solid $colorRojoNet;
     position: absolute;
     border-radius: 100%;
     transform: translateY(-90px);
@@ -368,6 +369,66 @@ footer {
 }
 
 /********** Clases para photography.html **********/
+.nuestros-proyectos{
+  h2{
+    font-size:3rem;
+  }
+  .servicios--linea{
+    border: 0.15rem solid white;
+    background-color: white;
+    width:10rem;
+  }
+}
+
+.header__servicios{
+  background-image: url('../../img/pexels-pnw-production-7062062.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+.servicios__container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0, 100px);
+  .servicios__icono{
+    display:flex;
+    background: $colorRojoNet;
+    border: 50px solid $colorRojoNet;
+    border-radius: 100%;
+    width:250px;
+    height:250px;
+    img {
+      width: 250px;
+      height: 150px;
+      transform: translate(-10px, 0px);
+    }
+  }
+  .textos__servicios{
+    h2{
+      font-size:4rem;
+      font-weight: 600;
+    }
+    h3{
+      font-size:2.5rem;
+    }
+  }
+}
+
 .seccion-galeria{
   background-color: black;
 }
@@ -598,7 +659,7 @@ footer {
       object-fit: cover;
     }
     .card__iconos {
-      border: 30px solid red;
+      border: 30px solid $colorRojoNet;
       position: absolute;
       border-radius: 100%;
       transform: translateY(-65px);
@@ -630,6 +691,37 @@ footer {
       justify-content: center;
     }
   }
+
+    /* Photography.html */
+    .header__photography{
+      min-height: 52rem;
+    }
+
+    .servicios__container{
+      transform: translate(0, 180px);
+      .servicios__icono{
+        display:flex;
+        background: $colorRojoNet;
+        border: 50px solid $colorRojoNet;
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        img {
+          width: 150px;
+          height: 95px;
+          transform: translate(-30px, -25px);
+        }
+      }
+      .textos__servicios{
+        h2{
+          font-size:3.5rem;
+          font-weight: 600;
+        }
+        h3{
+          font-size:2.5rem;
+        }
+      }
+    }
   
 
   .logosSocialesContainer {
@@ -810,7 +902,7 @@ header {
     object-fit: cover;
   }
   .card__iconos {
-    border: 30px solid red;
+    border: 30px solid $colorRojoNet;
     position: absolute;
     border-radius: 100%;
     transform: translateY(-65px);
@@ -842,6 +934,47 @@ header {
     justify-content: center;
   }
 }
+
+  /* Photography.html */
+  .header__photography{
+    min-height: 35rem;
+  }
+  .servicios__container{
+    transform: translate(0, 80px);
+    .servicios__icono{
+      display:flex;
+      background: $colorRojoNet;
+      border: 50px solid $colorRojoNet;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      img {
+        width: 100px;
+        height: 60px;
+        transform: translate(-35px, -30px);
+      }
+    }
+    .textos__servicios{
+      h2{
+        font-size:2.5rem;
+        font-weight: 600;
+      }
+      h3{
+        font-size:1.5rem;
+      }
+    }
+  }
+  .nuestros-proyectos{
+    h2{
+      font-size:1.8rem;
+    }
+    .servicios--linea{
+      border: 0.10rem solid white;
+      background-color: white;
+      width:10rem;
+    }
+  }
+
 
   .logo-footer{
     width: 20vw;
