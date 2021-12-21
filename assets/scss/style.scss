@@ -63,7 +63,7 @@ header {
     height: 100vh;
     .texto__header {
       font-size: 4rem;
-      margin-top: 25rem;
+      margin-top: 20rem;
       margin-bottom: 2rem;
     }
     .btn-header {
@@ -410,21 +410,21 @@ footer {
     background: $colorRojoNet;
     border: 50px solid $colorRojoNet;
     border-radius: 100%;
-    width:250px;
-    height:250px;
+    width:150px;
+    height:150px;
     img {
-      width: 250px;
-      height: 150px;
-      transform: translate(-10px, 0px);
+      width: 150px;
+      height: 80px;
+      transform: translate(-20px, -15px);
     }
   }
   .textos__servicios{
     h2{
-      font-size:4rem;
+      font-size:2.5rem;
       font-weight: 600;
     }
     h3{
-      font-size:2.5rem;
+      font-size:1.8rem;
     }
   }
 }

@@ -26,7 +26,7 @@ header {
     height: 100vh; }
     header .container__texto__header .texto__header {
       font-size: 4rem;
-      margin-top: 25rem;
+      margin-top: 20rem;
       margin-bottom: 2rem; }
     header .container__texto__header .btn-header {
       background-color: #e50914;
@@ -314,17 +314,17 @@ footer {
     background: #e50914;
     border: 50px solid #e50914;
     border-radius: 100%;
-    width: 250px;
-    height: 250px; }
+    width: 150px;
+    height: 150px; }
     .servicios__container .servicios__icono img {
-      width: 250px;
-      height: 150px;
-      transform: translate(-10px, 0px); }
+      width: 150px;
+      height: 80px;
+      transform: translate(-20px, -15px); }
   .servicios__container .textos__servicios h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600; }
   .servicios__container .textos__servicios h3 {
-    font-size: 2.5rem; }
+    font-size: 1.8rem; }
 
 .seccion-galeria {
   background-color: black; }
