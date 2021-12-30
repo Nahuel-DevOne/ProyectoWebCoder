@@ -404,15 +404,20 @@ footer {
   min-height: 70vh; }
 
 .card__package {
-  height: 32rem;
+  height: 34rem;
   padding: 0;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 16px #00000029;
   border-radius: 18px;
   opacity: 1; }
   .card__package .card__package__img {
-    height: 20rem;
+    height: 14rem;
     object-fit: cover; }
+  .card__package .card-package-promo {
+    background-color: #e50914;
+    color: white;
+    min-height: 5rem;
+    padding: 10px; }
   .card__package .card__package__texto {
     font-size: 1.25rem;
     font-weight: 500; }

@@ -522,7 +522,7 @@ footer {
 
 .card__package {
   // width: 22rem;
-  height: 32rem;
+  height: 34rem;
   padding: 0;
   // margin-left: 2rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -530,8 +530,14 @@ footer {
   border-radius: 18px;
   opacity: 1;
   .card__package__img {
-    height: 20rem;
+    height: 14rem;
     object-fit: cover;
+  }
+  .card-package-promo{
+    background-color: $colorRojoNet;
+    color: white;
+    min-height: 5rem;
+    padding: 10px;
   }
   .card__package__texto {
     font-size: 1.25rem;
