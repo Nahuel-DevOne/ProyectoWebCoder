@@ -430,6 +430,23 @@ footer {
     align-items: center;
     justify-content: center; }
 
+/********** Sección de trabajos **********/
+.header__trabajos {
+  background-image: url("../../img/trabajosPortada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .header__trabajos::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5; }
+
 /********** Vista tablet **********/
 @media (max-width: 991.98px) {
   .navbar-nav .dropdown-menu {
@@ -572,7 +589,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center; }
-  /* Photography.html */
+  /********** Photography.html **********/
   .header__photography {
     min-height: 52rem; }
   .servicios__container {
@@ -624,7 +641,7 @@ footer {
 @media (max-width: 575.98px) {
   .navbar-nav .dropdown-menu {
     text-align: center; }
-  /********** Clases para seccioness **********/
+  /********** Clases para secciones **********/
   #seccion-nosotros {
     min-height: auto;
     background-color: #e50914; }

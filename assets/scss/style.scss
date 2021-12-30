@@ -554,6 +554,25 @@ footer {
   }  
 }
 
+/********** Sección de trabajos **********/
+.header__trabajos{
+  background-image: url('../../img/trabajosPortada.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
 
 /********** Vista tablet **********/
 @media(max-width: 991.98px){   
@@ -751,7 +770,7 @@ footer {
     }
   }
 
-    /* Photography.html */
+  /********** Photography.html **********/
     .header__photography{
       min-height: 52rem;
     }
@@ -827,7 +846,7 @@ footer {
     text-align: center;
   }
   
-  /********** Clases para seccioness **********/
+  /********** Clases para secciones **********/
   #seccion-nosotros {
     min-height: auto;
     background-color: $colorRojoNet;
