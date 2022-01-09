@@ -514,6 +514,7 @@ footer {
     opacity: 0.5;
   }
 }
+
 /********** Cards Community Manager **********/
 .container-cards{
   background-image: url(../../img/index.jpg);
@@ -570,6 +571,113 @@ footer {
     left: 0;
     right: 0;
     opacity: 0.5;
+  }
+}
+
+/********** Edicion de Video **********/
+.header__video{
+  background-image: url('../../img/pexels-alex-fu-1767783.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+/********** Eventos **********/
+.header__eventos{
+  background-image: url('../../img/pexels-david-bartus-844928.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+/********** Diseño Grafico **********/
+.header__diseno__grafico{
+  background-image: url('../../img/pexels-ovan-57690.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+
+/********** Paginas Web **********/
+.header__paginas__web{
+  background-image: url('../../img/pexels-pixabay-270348.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+/********** Marketing **********/
+.header__marketing{
+  background-image: url('../../img/pexels-pixabay-265087.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content:'';
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+
+
+
+/**********vista desktop **********/
+@media only screen and (min-width:1240px){
+
+  /********** Cards Community Manager **********/
+  .cards__mobile {
+    display: none;
   }
 }
 
@@ -680,7 +788,7 @@ footer {
   /********** Clases para Servicios **********/
   .texto__servicios--linea{
     border: 3px solid $colorRojoNet;
-    width: 20rem;
+    width: 18rem;
   }
   /* Modificacion de boton Carousel */
   .carousel-control-prev-icon {
@@ -801,6 +909,10 @@ footer {
       }
     }
   
+  /********** Community **********/
+  .cards__desktop {
+    display: none;
+  }
 
   .logosSocialesContainer {
     display: flex;
@@ -923,7 +1035,7 @@ header {
 /********** Clases para Servicios **********/
 .texto__servicios--linea{
   border: 3px solid $colorRojoNet;
-  width: 20rem;
+  width: 15rem;
 }
 /* Modificacion de boton Carousel */
 .carousel-control-prev-icon {
@@ -1053,6 +1165,10 @@ header {
     }
   }
 
+  /********** Community **********/
+  .cards__desktop {
+    display: none;
+  }
 
   .logo-footer{
     width: 20vw;
