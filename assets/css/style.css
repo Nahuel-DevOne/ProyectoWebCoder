@@ -371,6 +371,9 @@ footer {
   height: 100%;
   object-fit: cover; }
 
+.gallery__item {
+  overflow: hidden; }
+
 .gallery__item:nth-child(1) {
   grid-column-start: span 3;
   grid-row-start: span 5; }
@@ -747,6 +750,14 @@ footer {
       font-weight: 600; }
     .servicios__container .textos__servicios h3 {
       font-size: 2.5rem; }
+  .gallery__img__joya {
+    position: relative;
+    right: 50px;
+    width: auto; }
+  .gallery__img__lentes {
+    position: relative;
+    right: 115px;
+    width: auto; }
   /********** Community **********/
   .cards__desktop {
     display: none; }
@@ -949,6 +960,14 @@ footer {
     border: 0.10rem solid white;
     background-color: white;
     width: 10rem; }
+  .gallery__img__joya {
+    position: relative;
+    right: 50px;
+    width: auto; }
+  .gallery__img__lentes {
+    position: relative;
+    right: 115px;
+    width: auto; }
   /********** Community **********/
   .cards__desktop {
     display: none; }

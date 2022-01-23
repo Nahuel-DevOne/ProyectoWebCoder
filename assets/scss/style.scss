@@ -482,6 +482,9 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+.gallery__item {
+  overflow: hidden;
+}
 
 .gallery__item:nth-child(1){
   grid-column-start: span 3;
@@ -959,7 +962,16 @@ footer {
         }
       }
     }
-  
+  .gallery__img__joya {
+    position: relative;
+    right: 50px;
+    width: auto;
+  }
+  .gallery__img__lentes {
+    position: relative;
+    right: 115px;
+    width: auto;
+  }
   /********** Community **********/
   .cards__desktop {
     display: none;
@@ -1241,6 +1253,16 @@ header {
       background-color: white;
       width:10rem;
     }
+  }
+  .gallery__img__joya {
+    position: relative;
+    right: 50px;
+    width: auto;
+  }
+  .gallery__img__lentes {
+    position: relative;
+    right: 115px;
+    width: auto;
   }
 
   /********** Community **********/
