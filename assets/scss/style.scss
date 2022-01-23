@@ -191,8 +191,8 @@ header {
 
 /********** Clases para cada sección **********/
 #seccion-nosotros {
-  min-height: 100vh;
-  background-color: $colorRojoNet;
+  // min-height: 100vh;
+  background-color: black;
 }
 #seccion-servicios {
   min-height: 100vh;
@@ -217,8 +217,15 @@ header {
   }
 }
 
+.row__nosotros {
+  background-color: $colorRojoNet;
+}
+
 .row__nosotros2 {
-  height: 71vh;
+  // height: 71vh;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: black;
 }
 .img__comillas {
   width: 75%;
@@ -230,12 +237,10 @@ header {
 .comilla2 {
   margin-top: 3rem;
 }
-.img__nosotros {
-  filter: brightness(75%);
-}
-.texto__img__nosotros {
+
+.texto__nosotros {
   z-index: 2;
-  position: absolute;
+  // position: absolute;
   color: white;
   text-align: center;
   margin-bottom: 2rem;
@@ -292,10 +297,8 @@ header {
 }
 
 .card__servicios {
-  // width: 22rem;
-  height: 32rem;
+  height: 35rem;
   padding: 0;
-  // margin-left: 2rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 16px #00000029;
   border-radius: 18px;
@@ -324,7 +327,7 @@ header {
     font-weight: 700;
   }
   .card__servicios__texto {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
   }
   .btn-servicios {
@@ -369,6 +372,10 @@ footer {
 }
 
 /********** Clases para photography.html **********/
+.card__container {
+  // background-color:black;
+  background-image: url('./../../img/index.jpg');
+}
 .nuestros-proyectos{
   h2{
     font-size:3rem;
@@ -433,6 +440,26 @@ footer {
   background-color: black;
 }
 
+.modal-header__fotos{
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+.modal-title {
+  margin-left: auto;
+  color: white;
+}
+.btn-close__fotos {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #000;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+
 .nuestros-proyectos{
   background-color: $colorRojoNet;
   min-height: 18vh;
@@ -445,7 +472,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   // grid-template-rows: repeat(6,1fr);
-  grid-auto-rows: 50px;
+  grid-auto-rows: 100px;
   padding: 20px;
   gap: 15px;
 }
@@ -522,10 +549,8 @@ footer {
 }
 
 .card__package {
-  // width: 22rem;
-  height: 34rem;
+  height: auto;
   padding: 0;
-  // margin-left: 2rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 16px #00000029;
   border-radius: 18px;
@@ -540,8 +565,12 @@ footer {
     min-height: 5rem;
     padding: 10px;
   }
+  .card__package__titulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
   .card__package__texto {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
   }
   .btn-package {
@@ -551,8 +580,21 @@ footer {
     height: 3rem;
     display: flex;
     align-items: center;
+    align-self: center;
     justify-content: center;
   }  
+}
+.card__package__marketing{
+  height: 49rem
+}
+.card__package__disenio{
+  height: 43rem
+}
+.card__package__web{
+  height: 49rem
+}
+.card__package__fotografia{
+  height: 37rem
 }
 
 /********** Sección de trabajos **********/
@@ -650,6 +692,17 @@ footer {
     opacity: 0.5;
   }
 }
+.logos__web__container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.logos__web__container img{
+  width: 10%;
+}
+.logos__web__background {
+  background-image: url('./../../img/index.jpg')
+}
 
 /********** Marketing **********/
 .header__marketing{
@@ -714,7 +767,7 @@ footer {
     /********** Clases para secciones **********/
     #seccion-nosotros {
       min-height: auto;
-      background-color: $colorRojoNet;
+      background-color: black;
     }
     #seccion-servicios {
       min-height: auto;
@@ -752,9 +805,10 @@ footer {
     min-height: auto;
   }
   .row__nosotros2 {
-    min-height: auto;
-    margin-top: 0;
-    height: auto;
+    // height: 40vh;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: black;
   }
   .img__comillas {
     width: 100%;
@@ -767,12 +821,10 @@ footer {
     margin-top: 5rem;
     margin-top: 5vh;
   }
-  .img__nosotros {
-    filter: brightness(75%);
-  }
-  .texto__img__nosotros {
+
+  .texto__nosotros {
     z-index: 2;
-    position: absolute;
+    // position: absolute;
     color: white;
     text-align: center;
     margin-bottom: 0rem;
@@ -780,7 +832,7 @@ footer {
       font-size:1.5rem;
       text-transform: uppercase;
     }
-    h4{
+    h5{
       font-size:1rem;
     }
   }
@@ -831,9 +883,8 @@ footer {
   }
   
   .card__servicios {
-    // width: 22rem;
     width: 80%;
-    height: 29rem;
+    height: 30rem;
     padding: 0;
     margin-left: 2rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -917,6 +968,11 @@ footer {
   .logosSocialesContainer {
     display: flex;
   }
+
+  /* Paginas web */
+  .logos__web__container img{
+    width: 20%;
+  }
 }
 
 /********** Vista ... especiales **********/
@@ -949,6 +1005,28 @@ footer {
     margin: 1rem;
     font-size: 2.75rem;
   }
+    /* Paginas web */
+    .logos__web__container img{
+      width: 20%;
+    }
+}
+/********** Vista ... especiales 2 **********/
+@media only screen and (min-width: 992px) and (max-width: 1239px){
+  .cards__mobile {
+    display: none;
+  }
+  .card__package__disenio {
+    height: 45rem;
+  }
+  .card__package__web {
+    height: 52rem;
+  }
+}
+/********** Vista ... especiales 3 **********/
+@media only screen and (min-width: 1240px) and (max-width: 1399px){
+  .card__package__disenio {
+    height: 45rem;
+  }
 }
 
 /********** Vista Mobile **********/
@@ -961,7 +1039,7 @@ footer {
   /********** Clases para secciones **********/
   #seccion-nosotros {
     min-height: auto;
-    background-color: $colorRojoNet;
+    background-color: black;
   }
   #seccion-servicios {
     min-height: auto;
@@ -999,9 +1077,10 @@ header {
   min-height: auto;
 }
 .row__nosotros2 {
-  min-height: auto;
-  height: auto;
-  margin-top: 0;
+  // height: 45vh;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: black;
 }
 .img__comillas {
   width: 100%;
@@ -1017,9 +1096,9 @@ header {
 .img__nosotros {
   filter: brightness(75%);
 }
-.texto__img__nosotros {
+.texto__nosotros {
   z-index: 2;
-  position: absolute;
+  // position: absolute;
   color: white;
   text-align: center;
   margin-bottom: 0rem;
@@ -1027,7 +1106,7 @@ header {
     font-size:1rem;
     text-transform: uppercase;
   }
-  h4{
+  h5{
     font-size:0.7rem;
   }
 }
@@ -1078,9 +1157,8 @@ header {
 }
 
 .card__servicios {
-  // width: 22rem;
   width: 80%;
-  height: 29rem;
+  height: 30rem;
   padding: 0;
   margin-left: 2rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1177,5 +1255,10 @@ header {
     color: white;
     margin: 1rem;
     font-size: 2.5rem;
+  }
+
+  /* Paginas Web */
+  .logos__web__container img{
+    width: 30%;
   }
 }
